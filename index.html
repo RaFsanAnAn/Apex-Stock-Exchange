@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Affordable web design">
+    <meta name="keywords" content="Web design">
+      <meta name="author" content="Rafsan">
+    <title>ApeX Stock Exchange</title>
+<link rel="stylesheet" href="./css/style.css">
+<script type="text/javascript">
+  function showdate() {
+  var d = new Date();
+document.getElementById("demo").innerHTML = d;
+
+}
+
+
+
+
+
+
+    function sortTable(tableClass, n) {
+var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+
+table = document.getElementsByClassName(tableClass)[0];
+switching = true;
+dir = "asc";
+while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 1; i < (rows.length - 1); i++) {
+        shouldSwitch = false;
+        x = rows[i].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+                var cmpX=isNaN(parseInt(x.innerHTML))?x.innerHTML.toLowerCase():parseInt(x.innerHTML);
+                var cmpY=isNaN(parseInt(y.innerHTML))?y.innerHTML.toLowerCase():parseInt(y.innerHTML);
+cmpX=(cmpX=='-')?0:cmpX;
+cmpY=(cmpY=='-')?0:cmpY;
+        if (dir == "asc") {
+            if (cmpX > cmpY) {
+                shouldSwitch= true;
+                break;
+            }
+        } else if (dir == "desc") {
+            if (cmpX < cmpY) {
+                shouldSwitch= true;
+                break;
+            }
+        }
+    }
+    if (shouldSwitch) {
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        switchcount ++;      
+    } else {
+        if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+        }
+    }
+}
+}
+
+</script>
+
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+   <div id="branding">
+    <h1 style="font-size: 42px;margin-top: -15px;"><span class="highlight"> ApeX </span> Stock Exchange </h1>
+</div>
+<nav>
+  <ul>
+    <li class="current"> <a href="index.html">Home </a></li>
+      <li> <a href="about.html">Companies</a></li>
+         <li> <a href="rules.html">Rules</a></li>
+    <li> <a href="about.html">About</a></li>
+    <li> <a href="services.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+      </div>
+      <div>
+<marquee direction="scroll" onmouseover="this.stop();" onmouseout="this.start();"> 
+
+
+AAMRANET <font style="color: green">+23.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ABB1STMF <font style="color: red">-33.91 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ABBANK <font style="color: green">+3.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ACFL<font style="color: green">+65.92 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ACI <font style="color: green">+90.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ETL  <font style="color: red">-14.12 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXIM1STMF <font style="color: red">-34.20 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+EXIMBANK <font style="color: green">+97.22 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+OLYMPIC <font style="color: green">+31.23 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ONEBANKLTD <font style="color: red">-32.67 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ORIONINFU <font style="color: red">-7.98 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  ORIONPHARM <font style="color: green">+56.25 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ RUPALIINS <font style="color: red">-16.67 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  HOMETEX <font style="color: green">+35.37 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  RECKITTBEN <font style="color: red">-11.78 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  MONNOSTAF <font style="color: red">-43.81 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  LINDEBD<font style="color: green">+87.09 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  GLAXOSMITH<font style="color: red">-9.45 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  AARONG <font style="color: green">+23.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+MOLLASOLT <font style="color: red">-33.91 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PREMIEREBANK <font style="color: green">+3.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+SQUAREPHARMA<font style="color: green">+65.92 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PRANRFL <font style="color: green">+90.21 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+WALTONMOTORS<font style="color: red">-14.12 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DANO<font style="color: red">-34.20 &darr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PUBALIBANK<font style="color: green">+97.22 &uarr;</font> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+</marquee>
+</div>
+</header>
+
+<section id="showcase">
+<div class="container">
+
+</section>
+
+<section id="newsletter">
+<div class="container">
+<h1 id="demo"> <input type="button" class ="button_1" value="Update Time" onclick="showdate()"> </h1>
+<form>
+  <input type="name" placeholder="Search here">
+  <button type="submit" class="button_1">Search </button>
+</form>
+
+
+</div>
+</section>
+
+<section >
+<div class="container">
+
+<div class="row">
+  <div class="column" >
+  
+  <table id ="tab" border="" class="supTable">
+                <tr> 
+                    <th onclick="sortTable('supTable', 0)">Name</th>
+                    <th onclick="sortTable('supTable', 1)">Trading Price</th>
+                    <th onclick="sortTable('supTable', 2)">% Change</th>
+                
+                </tr>
+                <tr class="Bata">
+                    <td>Bata</td>
+                    <td>225</td>
+                    <td>+6</td>
+              
+                </tr>
+                <tr class="Beximco">
+                    <td>Beximco</td>
+                    <td>125</td>
+                    <td>-3</td>
+                  
+                </tr>
+                <tr class="Ace">
+                    <td>Ace</td>
+                    <td>250</td>
+                    <td>0</td>
+               
+                </tr>
+                <tr class="ACE">
+                    <td>ACE</td>
+                    <td>100</td>
+                    <td>-3</td>
+          
+                </tr>
+                <tr class="Square">
+                    <td>Square</td>
+                    <td>120</td>
+                    <td>0</td>
+              
+                </tr>
+                </tr>
+            </table>
+
+  </div>
+
+  <div class="column" style="margin-top: 40px; margin-left: 20px;">
+  
+
+    <img src="img/stock.jpg" alt="Stickman" width="500" height="450">
+    
+  </div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<p> <div class="yes">
+            <ul type="none">
+              <li>Home</li>
+              <li>Companies</li>
+              <li>Rules</li>
+              <li>About</li>
+              <li>FAQ</li>
+              <li>Site Map</li>
+              <li>Contact Us</li>
+            </ul>
+            <br><br>
+
+            <center> <button type="button" class="btn"> <a href="https://www.dsebd.org">Go to DSE </a></button></center>
+             <p> All rights reserved to <font size="3">&copy;</font> RaFsan AnJum </p> </div>
+
+
+</footer>
+  </body>
+</html>
